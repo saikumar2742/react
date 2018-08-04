@@ -1,0 +1,39 @@
+body{
+    margin:0px;
+}
+header{
+    height: 50px;
+    background-color:red;
+}
+footer{
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.top-heading{
+    display: block;
+    margin: 20px 0 ;
+    font-weight: bold;
+}
+.home-container{
+    text-align: center;
+}
+.employee-form{
+    width: 400px;
+    margin: 20px auto;
+}
+.form-legend{
+    text-decoration: underline;
+}
+.each-name{
+    background-color: violet;
+    width: 200px;
+}
+.listings{
+    display: flex;
+}
+.listings .each-name{
+    margin:10px;
+}

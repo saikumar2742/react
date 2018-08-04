@@ -1,6 +1,7 @@
 const results = (state = initialState, action) =>{
     switch (action.type) {
       case 'VOTE_ANGULAR':
+      debugger
         console.log("Your choice is Angular!")
         return Object.assign({}, state, {
           angular: state.angular + 1

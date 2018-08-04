@@ -10,16 +10,18 @@ module.exports = {
         port: 8080
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.(js|jsx)?$/,
                 exclude:/node_modules/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015', 'react']
+                    presets: ['es2015', 'react',"babel-preset-env"],
+                    plugins: ['babel-plugin-transform-object-rest-spread']
                 }
-            }
+            },
+            { test: /\.css$/, loader: ["style-loader","css-loader"] }
         ]
-    }
+    },
 
 };
